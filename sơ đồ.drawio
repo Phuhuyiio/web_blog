@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" modified="2024-05-13T07:57:18.368Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="XJ0H9EyRMBVpTEaXWdAP" version="24.4.0" type="github">
+  <diagram name="Trang-1" id="RsjQN1hPquogGVEX6bG5">
+    <mxGraphModel dx="1050" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m3iyG7AHShg8tHYrDCt5-2" value="id: Integer (Primary Key)&#xa;name: Varchar&#xa;slug: Varchar (unique)&#xa;created_at: Timestamp&#xa;updated_at: Timestamp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="358" width="190" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="m3iyG7AHShg8tHYrDCt5-3" value="id: Integer (Primary Key)&#xa;username: Varchar&#xa;email: Varchar&#xa;password: Varchar&#xa;created_at: Timestamp&#xa;updated_at: Timestamp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="120" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="m3iyG7AHShg8tHYrDCt5-4" value="id: Integer (Primary Key)&#xa;title: Varchar&#xa;slug: Varchar (unique)&#xa;content: Text&#xa;category_id: Integer (Foreign Key references Categories)&#xa;user_id: Integer (Foreign Key references Users)&#xa;published_at: Timestamp&#xa;created_at: Timestamp&#xa;updated_at: Timestamp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="585" width="170" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="m3iyG7AHShg8tHYrDCt5-5" value="User" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="90" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m3iyG7AHShg8tHYrDCt5-8" value="Categories" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="95" y="320" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m3iyG7AHShg8tHYrDCt5-9" value="Post" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="555" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m3iyG7AHShg8tHYrDCt5-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="120" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="m3iyG7AHShg8tHYrDCt5-11" value="id: Integer (Primary Key)&#xa;post_id: Integer (Foreign Key references Posts)&#xa;user_id: Integer (Foreign Key references Users)&#xa;content: Text&#xa;created_at: Timestamp&#xa;updated_at: Timestamp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="840" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="m3iyG7AHShg8tHYrDCt5-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="448" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m3iyG7AHShg8tHYrDCt5-16" value="Comment" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="105" y="820" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m3iyG7AHShg8tHYrDCt5-18" value="Tag" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="630" y="90" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m3iyG7AHShg8tHYrDCt5-19" value="Like" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="635" y="418" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
